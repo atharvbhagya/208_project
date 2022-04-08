@@ -52,7 +52,6 @@ class ChatWindow extends React.Component {
     }
 
     sendHandler(content) {
-        //  var currState = { ...this.state };
         var currMsgArr = this.state.Msg.slice();
         var msgToDeliverVal = this.state.msgToDeliver;
         var OtherPersonInfoVal = this.state.OtherPersonInfo;
@@ -110,17 +109,6 @@ class ChatWindow extends React.Component {
                     </button>
                 </form>
             </div>
-            // <div>
-            //     <input
-            //         type="text"
-            //         value={this.state.msgToDeliver}
-            //         onChange={this.msgChangeHandler}
-            //     />
-            //     <button onClick={this.sendHandler(this.state.msgToDeliver)}>
-            //         Send!
-            //     </button>
-            // </div>
-            //</div>
         );
     }
 }
